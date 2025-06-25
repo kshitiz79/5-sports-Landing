@@ -1,151 +1,96 @@
-import Image from "next/image";
+'use client';
+
+import React from 'react';
+import Image from 'next/image';
+
+const recoverySteps = [
+  {
+    step: '01',
+    title: 'A Personal Recovery Specialist Who Designs Your Journey Every Week',
+    image: '/pp5.png',
+    paragraph:
+      'Every athlete heals differently, and that’s why our program assigns you a dedicated recovery specialist who truly understands your sport, your body, and your goals. From the first session to the final phase of reintegration, your specialist continuously monitors your progress and adapts your plan weekly. Whether you’re dealing with an injury, overtraining, or performance fatigue, the approach is always personal. We believe real progress comes from precision care—not templates. ',
+  },
+  {
+    step: '02',
+    title: 'Recovery Driven by Insights and Real Data',
+    image: '/pp4.png',
+    paragraph:
+      'In sports, recovery without data is just guesswork—and guesswork leads to setbacks. At 5 Sports Health, we leverage advanced performance diagnostics and recovery metrics to monitor every phase of your rehabilitation. From joint range scans to muscle function tests and VO2 max assessments, our technology reads what your body can’t always express. These insights help us understand how your muscles respond to treatment, how your nervous system is adapting, and what adjustments need to be made.',
+  },
+  {
+    step: '03',
+    title: 'Strength That Translates Directly to the Field',
+    image: '/pp2.png',
+    paragraph:
+      'Injury recovery isn’t just about healing—it’s about building strength that matters where it counts. That’s why our sessions focus not only on rehab, but also on performance integration. We train your body to move better, hit harder, and last longer—so when you’re cleared, you’re not just ‘ready’; you’re upgraded. From resistance training and neuromuscular re-education to plyometrics and sport-specific drills, everything is structured to translate into real-game performance.',
+  },
+  {
+    step: '04',
+    title: 'React Faster and Move with More Power When It Counts',
+    image: '/pp1.png',
+    paragraph:
+      'At the highest level of sport, milliseconds make all the difference. That’s why we train your reflexes, reactions, and raw power with proven neuromuscular techniques. Our program includes explosive movement drills, contrast training, resistance band work, and reaction-based reflex tasks—all targeted to make you faster, sharper, and more dominant in those game-changing moments.',
+  },
+  {
+    step: '05',
+    title: 'Speed That Shifts the Momentum of the Game',
+    image: '/pp6.png',
+    paragraph:
+      'Speed is more than how fast you run—it’s how fast you recover, respond, and dominate the game’s turning point. At 5 Sports Health, our recovery program integrates elite-level speed and agility conditioning into every rehabilitation plan. We go beyond cardio—we build mechanical speed from the ground up. Our specialists target stride mechanics, foot placement, ankle stiffness, and glute activation to give you explosive acceleration.',
+  },
+];
 
 export default function AthletesRecoveryProgram() {
   return (
-    <section className="bg-gray-100  rounded-t-3xl text-center px-5 py-12 relative ">
-      {/* Side cutouts */}
-
+    <section className="bg-gray-100 rounded-t-3xl text-center px-5 py-12 relative">
       {/* Header */}
-      <section className="flex  px-14 w-full text-black  max-md:flex-col ">
-      {/* Main Article with notches */}
-      <article className="relative flex flex-col md:py-10 py-5 w-full     overflow-visible ">
-        {/* Left notch */}
-       
-        {/* Right notch */}
-       
-
-        <h2 className="self-center text-2xl  md:text-6xl font-thin leading-none ">
-      Athletes Recovery Program
-        </h2>
-
-        <div className="hidden md:block flex-wrap gap-3 justify-center mt-6 w-full text-2xl text-center ">
-  <p className="max-w-7xl mx-auto">
-    Learn more about our mission to redefine sports medicine and athlete care.
-  </p>
-</div>
-
-      </article>
-    </section>
-
-      {/* Content */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto text-left mt-10">
-        {/* Block 1 */}
-        <div className="flex flex-col gap-6">
-          <h3 className="text-3xl font-bold text-black">
-           <span className="text-lime-500">01.</span>  A Personal Recovery Specialist Who Designs Your Journey Every Week
-          </h3>
-          <p className="text-gray-900 ">
-            When you have a dedicated team that understands your unique needs,
-            every step of your recovery becomes purposeful. We’re here to guide
-            you, offering a plan tailored specifically to your goals, pushing
-            you to reach new milestones without compromising your health.
-          </p>
-        </div>
-        <div>
-
-            <Image
-              src="/pp5.png" // replace with actual image path
-              alt="Recovery Specialist"
-              width={400}
-              height={400}
-              className="rounded-lg object-cover w-full h-full"
-            />
-
-        </div>
-
-        {/* Block 2 */}
-        <div>
-
-            <Image
-              src="/pp4.png" // replace with actual image path
-              alt="Recovery Insights"
-              width={400}
-              height={400}
-              className="rounded-lg object-cover w-full h-full"
-            />
-          
-        </div>
-        <div className="flex flex-col gap-6">
-          <h3 className="text-3xl font-bold text-black">
-          <span className="text-lime-500">02.</span> Recovery Driven by Insights and Real Data
-          </h3>
-          <p className="text-gray-900">
-            We don’t guess; we measure. With the latest recovery technology,
-            we’re able to assess your individual needs, tailor treatments, and
-            help you recover faster and safer.
-          </p>
-        </div>
-
-        
-      {/*  block 3*/}
-
-
-          <div className="flex flex-col gap-6">
-          <h3 className="text-3xl font-bold text-black">
-          <span className="text-lime-500">03.</span> Strength That Translates Directly to the Field.
-          </h3>
-          <p className="text-gray-900">
-           Our Goal isn't to help you heal - it's to make you stronger than before.
-           Every recovery session is designed with performance in mind, so when you step back into your sport, you'll feel the difference where it counts-on the field.
-          </p>
-        </div>
-        <div>
-
-            <Image
-              src="/pp2.png" 
-              alt="Recovery Specialist"
-              width={400}
-              height={400}
-              className="rounded-lg object-cover w-full h-full"
-            />
-      
-        </div>
-
-          <div>
-          <div className="rounded-xl overflow-hidden border border-lime-400 p-1">
-            <Image
-              src="/pp1.png" 
-              alt="Recovery Insights"
-              width={400}
-              height={400}
-              className="rounded-lg object-cover w-full h-full"
-            />
+      <section className="flex px-14 w-full text-black max-md:flex-col">
+        <article className="relative flex flex-col md:py-10 py-5 w-full overflow-visible">
+          <h2 className="self-center text-2xl md:text-6xl font-thin leading-none">
+            Athletes Recovery Program
+          </h2>
+          <div className="hidden md:block flex-wrap gap-3 justify-center mt-6 w-full text-2xl text-center">
+            <p className="max-w-7xl mx-auto">
+              Learn more about our mission to redefine sports medicine and athlete care.
+            </p>
           </div>
-        </div>
-        <div className="flex flex-col gap-6">
-          <h3 className="text-3xl font-bold text-black">
-          <span className="text-lime-500">04.</span>React Faster and Move with More Power When It
-          </h3>
-          <p className="text-gray-900">
-            In those high-pressure momenets, milliseconds count. that's why our recovery program includes methods to enhance your reaction time and build expolsive power,helping you stay sharp and make the game-changing move when it matters.
-          </p>
-        </div>
+        </article>
+      </section>
 
-         <div className="flex flex-col gap-6">
-          <h3 className="text-3xl font-bold text-black">
-          <span className="text-lime-500">05.</span> Speed That Shifts the Momentum of the Game
-          </h3>
-          <p className="text-gray-900">
-            when it comes to sports, speed can be the ultimate game-changer.Through our specialized recovery and conditioning program,we focus on improving your agility and overall speed-giving you that advantage in every sprint and play.
-          </p>
-        </div>
-        <div>
+      {/* Alternating Layout Blocks */}
+      <div className="flex flex-col gap-20 max-w-7xl mx-auto text-left mt-10">
+        {recoverySteps.map((step, index) => (
+          <div
+            key={index}
+            className={`flex flex-col md:flex-row ${
+              index % 2 !== 0 ? 'md:flex-row-reverse' : ''
+            } gap-10 items-center`}
+          >
+            {/* Image */}
+            <div className="w-full md:w-2/5">
+              <Image
+                src={step.image}
+                alt={step.title}
+                width={400}
+                height={100}
+                className=" object-cover w-full h-[30rem]"
+              />
+            </div>
 
-            <Image
-              src="/pp6.png" // replace with actual image path
-              alt="Recovery Specialist"
-              width={400}
-              height={400}
-              className="rounded-lg object-cover w-full h-full"
-            />
-     
-        </div>
+            {/* Text Block */}
+            <div className="w-full md:w-1/2 flex flex-col gap-6">
+              <h3 className="text-5xl font-thin text-black">
+                <span className="text-lime-500">{step.step}.</span> {step.title}
+              </h3>
+              <p className="text-gray-900 text-xl">{step.paragraph}</p>
+              <button className="mt-4 w-fit px-6 py-2 bg-black text-white rounded hover:bg-lime-600 transition">
+                Book Now
+              </button>
+            </div>
+          </div>
+        ))}
       </div>
-
-      {/*  block 3*/}
-
-
-      
     </section>
   );
 }

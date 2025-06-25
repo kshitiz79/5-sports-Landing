@@ -2,8 +2,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
-
-
 export const metadata = {
   title: "5 Sports Health",
   description: "India's first sports health and wellness platform",
@@ -12,10 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-       
-      >
-        <Header/>
+      <head>
+        <link rel="icon" href="/pp.png" type="image/png" />
+      </head>
+      <body>
+        <Header />
         {children}
       </body>
     </html>
