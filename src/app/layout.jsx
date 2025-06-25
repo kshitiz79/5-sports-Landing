@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/pp.png" type="image/png" />
       </head>
-      <body>
+      <body className="bg-white">
         <Header />
         {children}
       </body>
