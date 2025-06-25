@@ -81,7 +81,7 @@ export default function AthletesRecoveryProgram() {
             {/* Text Block */}
             <div className="w-full md:w-1/2 flex flex-col gap-6">
               <h3 className="text-5xl font-thin text-black">
-                <span className="text-lime-500">{step.step}.</span> {step.title}
+                <span className="text-green-500">{step.step}.</span> {step.title}
               </h3>
               <p className="text-gray-900 text-xl">{step.paragraph}</p>
               <button className="mt-4 w-fit px-6 py-2 bg-black text-white rounded hover:bg-lime-600 transition">
