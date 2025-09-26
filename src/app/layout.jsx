@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/pp.png" type="image/png" />
+        <link rel="icon" href="/font.png" type="image/png" />
       </head>
       <body className="bg-white">
         <Header />

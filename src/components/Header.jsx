@@ -11,13 +11,16 @@ const Header = () => {
 
       {/* Contact & CTA */}
       <div className="flex gap-4">
-        <div className="flex items-center border-gray-400 border-2 px-6 py-4">
-     <FaPhone className='rotate-90'/>
-          <span>(+91) 93535 55855</span>
-        </div>
         <a
-          href="#"
-          className=" border-gray-400 border-2 px-6 py-2 flex items-center justify-center hover:bg-black hover:text-black transition"
+          href="tel:+919353555855"
+          className="flex items-center border-gray-400 border-2 px-6 py-4 hover:bg-gray-100 transition"
+        >
+          <FaPhone className='rotate-90'/>
+          <span className="ml-2">(+91) 93535 55855</span>
+        </a>
+        <a
+          href="https://kivihealth.com/clinic/fives-sport-hospital-"
+          className=" border-gray-400 border-2 px-6 py-2 flex items-center justify-center hover:bg-white hover:text-black transition"
         >
           BOOK ONLINE HERE
         </a>

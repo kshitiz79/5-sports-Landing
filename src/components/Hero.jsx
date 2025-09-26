@@ -36,7 +36,7 @@ const Hero = () => {
 
         {/* CTA Button */}
         <a
-          href="#"
+          href="https://kivihealth.com/clinic/fives-sport-hospital-"
           className="border border-white px-6 py-3 hover:bg-white hover:text-black transition"
         >
           BOOK YOUR CONSULTATION

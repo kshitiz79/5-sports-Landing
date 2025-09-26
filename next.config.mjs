@@ -3,8 +3,10 @@ const nextConfig = {
   output: 'export',
   trailingSlash: true,
   images: {
-    unoptimized: true, // <-- This disables the Image Optimization API
+    unoptimized: true,
   },
+  basePath: '/meta',
+  assetPrefix: '/meta/',
 };
 
 export default nextConfig;
